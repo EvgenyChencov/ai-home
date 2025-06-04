@@ -2,6 +2,7 @@
 /out-tsc
 .junie
 .idea
+.vite
 
 node_modules
 */node_modules
