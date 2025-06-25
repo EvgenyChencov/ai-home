@@ -1,0 +1,148 @@
+.row {
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.row:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row:focus {
+  outline: 2px solid #6c757d;
+  outline-offset: -2px;
+  background-color: #f8f9fa;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.nameCell {
+  padding: 1rem 0.75rem;
+  min-width: 200px;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.name {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.95rem;
+}
+
+.email {
+  color: #6c757d;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.cell {
+  padding: 1rem 0.75rem;
+  color: #4a5568;
+  vertical-align: top;
+}
+
+.address {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.phoneLink {
+  color: #38a169;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.phoneLink:hover {
+  color: #2f855a;
+  text-decoration: underline;
+}
+
+.websiteLink {
+  color: #3182ce;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+  max-width: 150px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.websiteLink:hover {
+  color: #2c5aa0;
+  text-decoration: underline;
+}
+
+.company {
+  font-weight: 500;
+  color: #553c9a;
+  font-size: 0.875rem;
+}
+
+.actionsCell {
+  padding: 1rem 0.75rem;
+  width: 60px;
+  text-align: center;
+}
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  color: #e53e3e;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteButton:hover {
+  background-color: rgba(229, 62, 62, 0.1);
+  color: #c53030;
+  transform: scale(1.1);
+}
+
+.deleteButton:focus {
+  outline: 2px solid #e53e3e;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .nameCell,
+  .cell,
+  .actionsCell {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .nameCell {
+    min-width: 150px;
+  }
+  
+  .name {
+    font-size: 0.875rem;
+  }
+  
+  .email,
+  .address,
+  .phoneLink,
+  .websiteLink,
+  .company {
+    font-size: 0.75rem;
+  }
+  
+  .websiteLink {
+    max-width: 100px;
+  }
+} 

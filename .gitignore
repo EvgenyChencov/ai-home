@@ -3,6 +3,7 @@
 .junie
 .idea
 .vite
+.cursor
 
 node_modules
 */node_modules
